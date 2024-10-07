@@ -1,0 +1,21 @@
+.download-section {
+}
+
+.download-section .download-content {
+    background-color: #fff;
+    position: relative;
+    padding: 40px 40px 27px;
+}
+
+.download-section .download-app-image {
+    position: absolute;
+    left: 30px;
+}
+
+.download-section .download-app-text{
+
+}
+
+.margin-b-39 {
+    margin-bottom: 39px;
+}

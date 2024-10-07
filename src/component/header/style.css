@@ -1,0 +1,29 @@
+.navbar-container {
+    position: relative;
+    height: 90px;
+    background-color: #fff;
+}
+
+.navbar-container .navbar-fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 90px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.navbar-container .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    height: 100%;
+}
+
+.navbar-container .navbar-logo {
+
+}
+
+.navbar-container .contact-icon {}
