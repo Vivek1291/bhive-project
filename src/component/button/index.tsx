@@ -25,9 +25,9 @@ const ButtonStyle = styled.button<{ variant?: 'primary' | 'secondary' }>`
   cursor: pointer;
   position: relative;
   flex: 1;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1440px) {
     padding: 10px 8px;
-}
+  }
 `;
 
 const ActionContentStyling = styled.div`
@@ -58,7 +58,7 @@ const Button: React.FC<ButtonProps> = (props) => {
     <ActionContentStyling theme={theme}>
         <div>
             <div style={{color: theme.text.secondary, fontWeight: 500, textAlign: 'left'}}>{passType === 'dayPass' ? 'Day Pass' : 'Bulk Pass'}</div>
-            <div><span style={{...theme.typography.heading4, color: theme.text.main, fontWeight: 600}}>₹ {passPrice}</span><span style={{fontSize: '12px', color: theme.text.secondary, fontWeight: 500}}>/{noOfDays ? noOfDays : ''}{passType === 'dayPass' ? 'Day' : 'Days'}</span> </div>
+            <div><span style={{...theme.typography.heading6, color: theme.text.main, fontWeight: 600}}>₹ {passPrice}</span><span style={{fontSize: '12px', color: theme.text.secondary, fontWeight: 500}}>/{noOfDays ? noOfDays : ''}{passType === 'dayPass' ? 'Day' : 'Days'}</span> </div>
         </div>
         <div style={{color: theme.grey.grey6, fontWeight: 500}}>
             <span style={{opacity: '40%'}}>{'>'}</span>

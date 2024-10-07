@@ -41,8 +41,11 @@
   .container {
     margin: 0 auto;
     max-width: 1440px;
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 768px) {
         padding: 0 5px;
+    }
+    @media screen and (max-width: 1440px) {
+      padding: 0 20px;
     }
   }
 
@@ -81,7 +84,8 @@
 }
 
 .hide-on-desktop {
-    @media screen and (min-width: 600px) {
+  display: block;
+    @media screen and (min-width: 601px) {
         display: none;
     }
 }
